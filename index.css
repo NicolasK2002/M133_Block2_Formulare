@@ -1,0 +1,53 @@
+#surnameField{
+    grid-area: surnameField;
+}
+
+#nameField{
+    grid-area: nameField;
+}
+
+#streetField{
+    grid-area: streetField;
+}
+
+#numberField{
+    grid-area: numberField;
+}
+
+#plzField{
+    grid-area: plzField;
+}
+
+#locationField{
+    grid-area: locationField;
+}
+
+#ageField{
+    grid-area: ageField;
+}
+
+#emailField{
+    grid-area: emailField;
+}
+
+#resetButton{
+    grid-area: resetButton;
+}
+
+#submitButton{
+    grid-area: submitButton;
+}
+
+#fields{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:    1fr 1fr 1fr 1fr;*/
+    grid-template-areas: 
+        "surnameField surnameField nameField nameField"
+        "streetField streetField streetField numberField"
+        "plzField locationField locationField locationField"
+        "ageField emailField emailField emailField"
+        "1 1 resetButton submitButton";
+    column-gap: 20px;
+    row-gap: 5px;
+}

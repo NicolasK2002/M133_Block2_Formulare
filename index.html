@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="utf-8">
+        <title>Formulare</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <h1>Benutzererfassung</h1>
+        <form id="fields">
+            <input type="text" id="surnameField" name="surnameField" placeholder="Vorname" required>
+            <input type="text" id="nameField"name="nameField" placeholder="Nachname" required>
+            
+            <input type="text" id="streetField" name="streetField" placeholder="Strasse" required>
+            <input type="number" id="numberField" name="numberField" placeholder="Nr. (opt.)">
+            
+            <input type="number" id="plzField" name="plzField" pattern="\d{4}" placeholder="PLZ" required>
+            <input type="text" id="locationField" name="locationField" placeholder="Ort" list="locations" required>
+            <datalist id="locations">
+                <option value="Luzern" />
+                <option value="Meggen" />
+                <option value="Zuerich" />
+                <option value="Sursee" />
+                <option value="Vierwaldstaettersee" />
+                <option value="Bern" />
+                <option value="Matterhorn" />
+            </datalist>
+            
+            <input type="number" id="ageField" name="ageField" placeholder="Alter (opt.)">
+            <input type="email" id="emailField" name="emailField" placeholder="Email-Adresse" multiple required>
+            
+            <input type="reset" id="resetButton" value="Verwerfen">
+            <input type="submit" id="submitButton" value="Senden">
+        </form>
+    </body>
+</html>
